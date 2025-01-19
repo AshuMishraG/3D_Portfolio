@@ -64,7 +64,6 @@ function animate() {
 
   renderer.render(scene, camera);
 }
-animate();
 
 // Handle windows resizing
 window.addEventListener("resize", () => {
@@ -72,3 +71,5 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+animate();
