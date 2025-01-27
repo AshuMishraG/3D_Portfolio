@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import { navLinks } from "../constants/index.js";
 
 const NavItems = () => {
   return (
     <ul className="nav-ul">
-      {["Home", "About", "My Work", "Lets Connect!"].map((item, index) => (
-        <li key={index} className="nav-li">
-          <a href="/" className="nav-li_a">
-            {item}
+      {navLinks.map(({ id, href, name }) => (
+        <li key={id} className="nav-li">
+          <a href={href} className="nav-li_a" onClick={() => {}}>
+            {name}
           </a>
         </li>
       ))}
@@ -44,6 +45,12 @@ const Navbar = () => {
             <NavItems />
           </nav>
         </div>
+      </div>
+
+      <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+        <nav className="p-5">
+          <NavItems />
+        </nav>
       </div>
     </header>
   );
