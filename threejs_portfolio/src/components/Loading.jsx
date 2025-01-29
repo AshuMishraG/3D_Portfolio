@@ -2,7 +2,6 @@ import { Html, useProgress } from "@react-three/drei";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();
-
   return (
     <Html
       as="div"
@@ -15,6 +14,7 @@ const CanvasLoader = () => {
       }}
     >
       <span className="canvas-loader" />
+      <span className="canvas-loader"></span>
       <p
         style={{
           fontSize: 14,
@@ -23,7 +23,6 @@ const CanvasLoader = () => {
           marginTop: 40,
         }}
       >
-        {progress != 0 ? `${progress.toFixed(2)}%` : "Entering... ~/.Home"}
       </p>
     </Html>
   );
