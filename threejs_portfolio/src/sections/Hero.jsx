@@ -17,8 +17,8 @@ import { HackerRoom } from "../components/HackerRoom.jsx";
 const Hero = () => {
   // Use media queries to determine screen size
   const isSmall = useMediaQuery({ maxWidth: 440 });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  const isMobile = useMediaQuery({ minWidth: 441, maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1024 });
 
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
@@ -38,7 +38,7 @@ const Hero = () => {
           <Suspense fallback={<CanvasLoader />}>
             {/* To hide controller */}
             <Leva hidden />
-            <PerspectiveCamera makeDefault position={[0, 0, 35]} />
+            <PerspectiveCamera makeDefault position={[0, 0, 20]} />
 
             <HeroCamera isMobile={isMobile}>
               <HackerRoom
