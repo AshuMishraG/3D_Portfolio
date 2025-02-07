@@ -28,7 +28,7 @@ export const clientReviews = [
     position: "Marketing Director at GreenLeaf",
     img: "assets/review1.png",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Ashutosh Mishra was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const clientReviews = [
     position: "Founder of TechGear Shop",
     img: "assets/review2.png",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "Ashutosh’s expertise in software development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const clientReviews = [
     position: "Project Manager at UrbanTech ",
     img: "assets/review3.png",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can’t say enough good things about Ashu. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const clientReviews = [
     position: "CEO of BrightStar Enterprises",
     img: "assets/review4.png",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+      "Ashutosh Mishra was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
   },
 ];
 
@@ -282,34 +282,46 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 };
 
 export const workExperiences = [
+  /*
   {
     id: 1,
     name: "Framer",
     pos: "Lead Web Developer",
     duration: "2022 - Present",
-    title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+    points: [
+      "Framer serves as my go-to tool for creating interactive prototypes.",
+      "I use it to bring designs to life, allowing stakeholders to experience the user flow and interactions before development.",
+    ],
     icon: "/assets/framer.svg",
     animation: "victory",
   },
+*/
   {
     id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
-    title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+    name: "Ibentos",
+    pos: "Software Engineer AI Research Intern",
+    duration: "Sep 2024 - March 2025",
+    points: [
+      "Refining AI conversational models using OpenAI’s Assistant API, optimizing response generation and user experience through advanced natural language processing and context-awareness.",
+      "Collaborating with the Metaverse team to integrate AI-driven conversational agents into immersive 3D environments, utilizing Three.js and Babylon.js for interactive and responsive virtual experiences.",
+      "Developed AI-powered automation tools that optimize workflows, enhancing operational efficiency by improving API communication patterns and real-time data processing.",
+      "Pioneered the implementation of machine learning models for real-time context understanding, contributing to the evolution of virtual interaction frameworks and AI-driven metaverse solutions.",
+    ],
+    icon: "/assets/ibentos.png",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
-    title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+    name: "D2i Technology",
+    pos: "Software Engineer Intern",
+    duration: "June 2024 - Sep 2024",
+    points: [
+      "Developed an IoT-based power telemetry system utilizing Raspberry Pi 4 for real-time energy monitoring and accurate motor status detection, leveraging Snap7 for communication with Siemens S7-1200 PLCs.",
+      "Implemented secure multi-user data storage using MS SQL Server containers with Docker, streamlining access for large-scale deployments and improving system reliability.",
+      "Interactive dashboard with Grafana and Appsmith integration, enabling real-time visualization and comprehensive data management of energy consumption across various sources.",
+      "Enhanced network security and data handling with Twingate and edge computing on Raspberry Pi, ensuring low-latency and scalable system performance.",
+    ],
+    icon: "/assets/d2iTechnology.png",
     animation: "salute",
   },
 ];
