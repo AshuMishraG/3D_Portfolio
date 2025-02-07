@@ -29,7 +29,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Ashutosh Mishra</p>
               <p className="grid-subtext">
-                With Intenrship experiance, i have honed my skills in full-stack
+                With Industry Experiance, i have honed my skills in full-stack
                 development, AI products and 3D models for Metaverse.
               </p>
             </div>
