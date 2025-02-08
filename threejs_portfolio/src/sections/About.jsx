@@ -29,9 +29,14 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Ashutosh Mishra</p>
               <p className="grid-subtext">
-                With Industry Experiance, i have honed my skills in full-stack
-                development, AI products and 3D models for Metaverse.
+                With Industry Experience, I have honed my skills in full-stack
+                development, AI products, and 3D models for Metaverse.
               </p>
+              <div className="mt-10">
+                <a href="#home" className="w-full">
+                  <Button name="Back to Home" isBeam containerClass="w-full" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -48,9 +53,18 @@ const About = () => {
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
                 I specialize in a variety of languages, frameworks, and tools
-                that allow me to build robust and scalable applications for
-                details check out my socials and CV.
+                that allow me to build robust and scalable applications. For
+                details, check out my socials and CV.
               </p>
+              <div className="mt-5">
+                <a href="#work" className="w-full">
+                  <Button
+                    name="View Experience"
+                    isBeam
+                    containerClass="w-full"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -78,7 +92,7 @@ const About = () => {
                 ]}
               />
             </div>
-            <div>
+            <div className="mt-20">
               <p className="grid-headtext">
                 I’m very flexible with Time Zone communications & locations
               </p>
@@ -86,7 +100,11 @@ const About = () => {
                 I&apos;m based in New Delhi, India and open to Remote Work
                 Worldwide.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <div className="mt-20">
+                <a href="#contact" className="w-full">
+                  <Button name="Contact Me" isBeam containerClass="w-full" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -105,7 +123,7 @@ const About = () => {
                 Watching my dad work on the computer as a kid inspired me to
                 become a Software Engineer. My passion to put my own hands-on
                 skills and knowledge to the test in order to get better results
-                has bought me to the point where I am today. My dream is to
+                has brought me to the point where I am today. My dream is to
                 disruptively innovate the IT Industry and meet and exceed the
                 customer needs and expectations.
               </p>
