@@ -92,6 +92,11 @@ export const myProjects = [
         name: "NextJS",
         path: "/assets/nextjs.png",
       },
+      {
+        id: 5,
+        name: "Tailwind",
+        path: "/assets/tailwindcss.png",
+      },
     ],
   },
   // {
@@ -274,10 +279,9 @@ export const workExperiences = [
   {
     id: 1,
     name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    pos: "Software Engineer",
+    duration: "Future",
     points: [
-      "Framer serves as my go-to tool for creating interactive prototypes.",
       "I use it to bring designs to life, allowing stakeholders to experience the user flow and interactions before development.",
     ],
     icon: "/assets/framer.svg",
