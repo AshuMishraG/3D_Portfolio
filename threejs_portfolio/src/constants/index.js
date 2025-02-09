@@ -62,7 +62,7 @@ export const myProjects = [
     desc: "AI ManavRachna Teacher is an innovative educational platform that leverages Azure Cloud's Text-to-Speech and Three.js for creating interactive 3D avatars. It provides an immersive learning experience with AI-driven teaching assistants.",
     subdesc:
       "Utilizing cutting-edge technologies like Azure Cloud TTS, R3F, and Three.js, this project offers a unique approach to digital education, enhancing engagement and understanding through 3D visualizations.",
-    href: "https://github.com/AshuMishraG/ai_manavrachna_teacher",
+    href: "https://ai-manavrachna-teacher-pym9ym6ep-ashumishrags-projects.vercel.app",
     texture: "/textures/project/aiManavrachna.mp4",
     logo: "/assets/Nanami.jpg",
     logoStyle: {
