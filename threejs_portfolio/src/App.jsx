@@ -6,6 +6,7 @@ import Contact from "./sections/Contact.jsx";
 import Clients from "./sections/Clients.jsx";
 import Projects from "./sections/Projects.jsx";
 import Experience from "./sections/Experience.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Experience />
       <Contact />
       <Footer />
+      <Analytics />
     </main>
   );
 };
