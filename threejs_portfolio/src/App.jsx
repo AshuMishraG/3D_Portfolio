@@ -9,19 +9,19 @@ import Experience from "./sections/Experience.jsx";
 import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
-  return (
-    <main className="max-w-7xl mx-auto relative">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Clients />
-      <Experience />
-      <Contact />
-      <Footer />
-      <Analytics />
-    </main>
-  );
+   return (
+      <main className="max-w-7xl mx-auto relative">
+         <Navbar />
+         <Projects />
+         <Experience />
+         <Hero />
+         <About />
+         <Clients />
+         <Contact />
+         <Footer />
+         <Analytics />
+      </main>
+   );
 };
 
 export default App;
