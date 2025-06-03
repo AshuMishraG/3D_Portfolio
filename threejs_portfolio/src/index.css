@@ -222,3 +222,61 @@ body {
    animation: shine 8s linear infinite;
    text-shadow: 0 1px 4px rgba(180, 180, 180, 0.08);
 }
+
+/* --- MacWindow custom styles --- */
+.macwindow-bar {
+   background: linear-gradient(90deg, #e5e7eb 0%, #cfd2da 60%, #bfc1c2 100%);
+}
+.macwindow-traffic {
+   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.18),
+      0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+}
+.macwindow-bar .flex.space-x-2 {
+   background: rgba(30, 34, 44, 0.18);
+   border-radius: 9999px;
+   padding: 0.25rem 0.5rem;
+}
+.macwindow-shine {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: radial-gradient(
+      ellipse 80% 60% at 100% 0%,
+      rgba(255, 255, 220, 0.22) 0%,
+      rgba(255, 255, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0.04) 60%,
+      rgba(255, 255, 255, 0) 100%
+   );
+   z-index: 2;
+   pointer-events: none;
+   mix-blend-mode: lighten;
+}
+@media (max-width: 640px) {
+   .macwindow-content {
+      padding: 1.5rem !important;
+   }
+}
+
+.macwindow-frame {
+   min-height: 300px;
+   max-width: 700px;
+   margin: 0 auto;
+   background: linear-gradient(180deg, #18181b 0%, #23272f 100%);
+   border: 2px solid rgba(255, 255, 255, 0.18);
+   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.7),
+      0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+   position: relative;
+}
+.macwindow-frame {
+   /* Shiny border effect */
+   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.7),
+      0 0 0 2px rgba(255, 255, 255, 0.1) inset,
+      0 0 8px 1px rgba(255, 255, 255, 0.12);
+}
+@media (max-width: 700px) {
+   .macwindow-frame {
+      max-width: 98vw;
+   }
+}
