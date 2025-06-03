@@ -66,19 +66,19 @@ const Contact = () => {
    };
 
    return (
-      <section className="c-space my-20" id="contact">
+      <section className="c-space my-8" id="contact">
          {alert.show && <Alert {...alert} />}
 
-         <div className="relative min-h-screen flex items-center justify-center flex-col">
+         <div className="relative min-h-[60vh] flex items-center justify-center flex-col">
             <MacWindow className="w-full">
                <div className="contact-container">
                   <h3 className="head-text text-center shining-gradient">
-                     Let's talk
+                     Let&apos;s talk
                   </h3>
                   <p className="text-lg text-white-600 mt-3 text-center">
-                     Whether you're looking to build a new website, improve your
-                     existing platform, or bring a unique project to life, I'm
-                     here to help.
+                     Whether you&apos;re looking to build a new website, improve
+                     your existing platform, or bring a unique project to life,
+                     I&apos;m here to help.
                   </p>
 
                   <form
