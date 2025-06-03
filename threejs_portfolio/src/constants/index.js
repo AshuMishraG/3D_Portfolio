@@ -284,7 +284,7 @@ export const workExperiences = [
          "Architected and optimized agent lifecycle and plugin management in CortexON, enabling scalable multi-agent orchestration.",
          "Revamped the MCP UI and integrated the MCP client for seamless agent workflow and monitoring.",
          "Enhanced FreightX backend with LogFire-based error handling, improving reliability and observability for LLM pipelines.",
-         "Working on a general social media agent capable of posting and replying across any app.",
+         "Developing a LinkedIn automation agent leveraging advanced AI agents for autonomous content posting, engagement, and workflow integration.",
       ],
       icon: "/assets/agentic.png",
       link: "https://www.theagentic.ai/",
@@ -292,7 +292,7 @@ export const workExperiences = [
    },
    {
       id: 2,
-      name: "Ibentos",
+      name: "ibentosAI",
       pos: "AI Researcher",
       duration: "Sep 2024 – March 2025",
       points: [
