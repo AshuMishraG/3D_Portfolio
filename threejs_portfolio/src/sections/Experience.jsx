@@ -33,9 +33,11 @@ const WorkExperience = () => {
 
                      <Suspense fallback={<CanvasLoader />}>
                         <Developer
-                           position-y={-3}
+                           position-y={-2.5}
+                           position-z={-1.5}
                            scale={3}
                            animationName={animationName}
+                           rotation={[0.4, 0, 0]}
                         />
                      </Suspense>
                   </Canvas>
