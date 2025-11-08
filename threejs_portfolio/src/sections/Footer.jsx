@@ -35,7 +35,7 @@ const Footer = () => {
           className="social-icon"
         >
           <img
-            src="/assets/linkedin.png"
+            src="/assets/linkedin.webp"
             alt="linkedin"
             className="w-1/2 h-1/2"
           />

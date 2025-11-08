@@ -40,17 +40,17 @@ const Projects = () => {
          </p>
 
          <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-            <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
-               <div className="absolute top-0 right-0">
+            <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 overflow-hidden">
+               <div className="absolute top-0 right-0 z-0 pointer-events-none">
                   <img
                      src={currentProject.spotlight}
                      alt="spotlight"
-                     className="w-full h-96 object-cover rounded-xl"
+                     className="w-full h-96 object-cover rounded-xl opacity-100"
                   />
                </div>
 
                <div
-                  className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
+                  className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg relative z-10"
                   style={currentProject.logoStyle}
                >
                   <img
@@ -60,16 +60,20 @@ const Projects = () => {
                   />
                </div>
 
-               <div className="flex flex-col gap-5 text-white-600 my-5">
-                  <p className="text-white text-2xl font-semibold animatedText">
+               <div className="flex flex-col gap-5 text-white-600 my-5 relative z-10">
+                  <p className="text-white text-2xl font-semibold animatedText drop-shadow-lg">
                      {currentProject.title}
                   </p>
 
-                  <p className="animatedText">{currentProject.desc}</p>
-                  <p className="animatedText">{currentProject.subdesc}</p>
+                  <p className="animatedText drop-shadow-md">
+                     {currentProject.desc}
+                  </p>
+                  <p className="animatedText drop-shadow-md">
+                     {currentProject.subdesc}
+                  </p>
                </div>
 
-               <div className="flex items-center justify-between flex-wrap gap-5">
+               <div className="flex items-center justify-between flex-wrap gap-5 relative z-10">
                   <div className="flex items-center gap-3">
                      {currentProject.tags.map((tag, index) => (
                         <div key={index} className="tech-logo">
@@ -79,14 +83,14 @@ const Projects = () => {
                   </div>
 
                   <a
-                     className="flex items-center gap-2 cursor-pointer text-white-600"
+                     className="flex items-center gap-2 cursor-pointer text-white-600 drop-shadow-md"
                      href={currentProject.href}
                      target="_blank"
                      rel="noreferrer"
                   >
                      <p>Check Live Site</p>
                      <img
-                        src="/assets/arrow-up.png"
+                        src="/assets/arrow-up.webp"
                         alt="arrow"
                         className="w-3 h-3"
                      />
@@ -100,7 +104,7 @@ const Projects = () => {
                   onClick={() => handleNavigation("previous")}
                >
                   <img
-                     src="/assets/left-arrow.png"
+                     src="/assets/left-arrow.webp"
                      alt="left arrow"
                      className="w-8 h-8"
                   />
@@ -111,13 +115,18 @@ const Projects = () => {
                   onClick={() => handleNavigation("next")}
                >
                   <img
-                     src="/assets/right-arrow.png"
+                     src="/assets/right-arrow.webp"
                      alt="right arrow"
                      className="w-8 h-8"
                   />
                </button>
 
-               <Canvas>
+               <Canvas
+                  gl={{ alpha: true, antialias: true }}
+                  onCreated={({ scene }) => {
+                     scene.background = null;
+                  }}
+               >
                   <ambientLight intensity={Math.PI} />
                   <directionalLight position={[10, 10, 5]} />
                   <Center>

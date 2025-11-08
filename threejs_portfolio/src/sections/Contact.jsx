@@ -133,7 +133,7 @@ const Contact = () => {
                         {loading ? "Sending..." : "Send Message"}
 
                         <img
-                           src="/assets/arrow-up.png"
+                           src="/assets/arrow-up.webp"
                            alt="arrow-up"
                            className="field-btn_arrow"
                         />
