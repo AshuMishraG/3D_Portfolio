@@ -1,6 +1,6 @@
-# My Portfolio
+# Ashutosh Mishra - Portfolio
 
-Welcome to my personal portfolio website, showcasing my skills, projects, and experience in software development.
+Welcome to my personal portfolio website, showcasing my skills, projects, and experience as an AI Developer and Software Engineer.
 
 ## Table of Contents
 

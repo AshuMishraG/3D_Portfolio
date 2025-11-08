@@ -1,14 +1,17 @@
 {
-   "name": "threejs_portfolio",
+   "name": "ashutosh-mishra-portfolio",
+   "description": "Personal portfolio website showcasing AI development, software engineering projects, and 3D interactive experiences",
+   "version": "1.0.0",
    "private": true,
-   "version": "0.0.0",
    "type": "module",
    "scripts": {
       "dev": "vite",
       "build": "vite build",
       "lint": "eslint .",
       "preview": "vite preview",
-      "optimize-images": "node scripts/optimize-images.js"
+      "optimize-images": "node scripts/optimize-images.js",
+      "convert-to-webp": "node scripts/convert-to-webp.js",
+      "cleanup-images": "node scripts/cleanup-images.js"
    },
    "dependencies": {
       "@emailjs/browser": "^4.4.1",
