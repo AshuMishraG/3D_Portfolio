@@ -22,14 +22,15 @@
       "gsap": "^3.12.7",
       "leva": "^0.10.0",
       "maath": "^0.10.8",
+      "prop-types": "^15.8.1",
       "react": "^18.3.1",
       "react-dom": "^18.3.1",
       "react-globe.gl": "^2.31.0",
       "react-responsive": "^10.0.0",
       "responsive": "^2.0.0",
+      "sharp": "^0.33.2",
       "three": "^0.172.0",
-      "three-stdlib": "^2.30.0",
-      "sharp": "^0.33.2"
+      "three-stdlib": "^2.30.0"
    },
    "devDependencies": {
       "@eslint/js": "^9.17.0",
