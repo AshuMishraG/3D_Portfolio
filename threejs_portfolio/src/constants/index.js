@@ -280,44 +280,129 @@ export const workExperiences = [
       name: "TheAgentic",
       pos: "AI Developer",
       duration: "Apr 2025 – Present",
-      points: [
-         "Directed the Value Aligners (Cybersecurity) stack by architecting a multi-agent AI coordinator, enabling fully automated intake-to-report pipelines and improving risk assessment precision by 50% via implementing a web deepresearch agent.",
-         "Advanced college application matching accuracy by 25% by leading end-to-end development of the Nische (EdTech) platform's full frontend, its complementary knowledge graph-based backend, and an integrated chatbot interface.",
-         "Accelerated critical email data retrieval by 40% for the FreightX (Logistics) platform by architecting a high-throughput, thread-based agent system utilizing a novel asynchronous Unipile integration for enhanced email processing.",
-         "Upgraded the agent platform by streamlining CortexON orchestrator with new SDKs and refactored prompts, engineering a real-time MCP UI monitoring dashboard, accelerating agent deployment by 40% and response times by 25%.",
-      ],
+      summary:
+         "Leading multi-agent product squads delivering cybersecurity, logistics, and admissions copilots across TheAgentic's venture portfolio.",
       icon: "/assets/agentic.webp",
       link: "https://www.theagentic.ai/",
       animation: "salute",
+      projects: [
+         {
+            name: "Value Aligners Cyber Risk Copilot",
+            description:
+               "Directed the Value Aligners stack end-to-end, orchestrating autonomous audit workflows and stakeholder reporting.",
+            impact: [
+               "Architected a multi-agent AI coordinator that automates intake-to-report pipelines, improving risk assessment precision by 50%.",
+               "Streamlined the CortexON orchestrator with SDK upgrades and a real-time MCP monitoring dashboard, accelerating deployments by 40% and agent responses by 25%.",
+            ],
+            links: [
+               {
+                  label: "Value Aligners Live",
+                  url: "https://value-aligners-staging.theagentic.ai/",
+               },
+            ],
+            technologies: [
+               "CortexON",
+               "Multi-Agent Systems",
+               "Prompt Engineering",
+               "Next.js",
+            ],
+         },
+         {
+            name: "Nishe Admissions Copilot",
+            description:
+               "Built an AI admissions coach that matches students to universities and automates essay review cycles.",
+            impact: [
+               "Shipped the entire frontend, knowledge-graph powered backend, and chat interface, increasing match accuracy by 25%.",
+            ],
+            links: [
+               {
+                  label: "Nishe Preview",
+                  url: "https://nishe.netlify.app/profile",
+               },
+            ],
+            technologies: ["React", "Knowledge Graphs", "LLM Agents"],
+         },
+         {
+            name: "FreightX Logistics Copilot",
+            description:
+               "Launched a logistics-focused agent that triages high-volume email threads and surfaces critical shipment insights.",
+            impact: [
+               "Engineered a high-throughput thread-based agent with an asynchronous Unipile integration, cutting critical email retrieval time by 40%.",
+            ],
+            links: [
+               {
+                  label: "FreightX Sandbox",
+                  url: "https://freightx-sandbox.netlify.app/",
+               },
+            ],
+            technologies: ["Node.js", "Unipile", "Async Workers"],
+         },
+      ],
    },
    {
       id: 2,
       name: "ibentosAI",
-      pos: "AI Research Intern",
+      pos: "AI Research",
       duration: "Sep 2024 – Mar 2025",
-      points: [
-         "Augmented 3D user interaction and boosted AI response accuracy by 20% by fine-tuning conversational models and collaborating with the Metaverse team to seamlessly integrate them into immersive virtual environments.",
-         "Elevated overall reliability by 25% by developing sophisticated AI-powered automation tools that optimized complex internal workflows, secured API communications, and streamlined real-time data processing.",
-         "Lifted user engagement by 35% by designing a lightweight, plug-and-play iframe popup for seamless client website integration, enabling instant, no-code deployment for non-technical users and simplifying onboarding.",
-         "Reduced critical response latency by 30% by refactoring complex asynchronous event processing from legacy recursive callbacks to modern, maintainable async/await loops, improving code readability and performance.",
-      ],
+      summary:
+         "Researched and productized conversational AI experiences powering immersive metaverse events and automation pipelines.",
       icon: "/assets/ibentos.webp",
       link: "https://www.ibentos.ai/",
       animation: "clapping",
+      projects: [
+         {
+            name: "Metaverse Conversational Avatar",
+            description:
+               "Integrated fine-tuned conversational models into ibentosAI's metaverse booth experiences.",
+            impact: [
+               "Coordinated with the Metaverse team to blend 3D avatar gestures with contextual responses, boosting interaction quality by 20%.",
+               "Crafted a plug-and-play iframe popup for client sites, enabling no-code deployment and lifting engagement by 35%.",
+            ],
+            technologies: ["Three.js", "LLM Fine-Tuning", "Web Components"],
+         },
+         {
+            name: "Automation Reliability Initiative",
+            description:
+               "Hardened ibentosAI's internal automation platform for scale.",
+            impact: [
+               "Built AI-powered automation tools that optimized internal workflows and secured API communications, improving reliability by 25%.",
+               "Refactored recursive callback flows into maintainable async/await loops, reducing response latency by 30%.",
+            ],
+            technologies: ["Node.js", "TypeScript", "Async Patterns"],
+         },
+      ],
    },
    {
       id: 3,
       name: "D2i Technology",
-      pos: "Software Engineer Intern",
+      pos: "Software Engineer",
       duration: "Jun 2024 – Sep 2024",
-      points: [
-         "Achieved 99.9% real-time remote monitoring uptime for Siemens S7-1200 PLCs by engineering a complete IoT telemetry system on a Raspberry Pi 4, interfacing via the Snap7 protocol for industrial-grade data acquisition.",
-         "Bolstered system scalability and data integrity by deploying containerized MS SQL Server instances in Docker, significantly reducing query latency by 35% in high-demand, high-concurrency industrial scenarios.",
-         "Boosted user engagement by 50% and amplified operational insights by creating a fully interactive, real-time analytics dashboard, leveraging Grafana and Appsmith for a superior and more intuitive user experience.",
-         "Cut network latency by 30% and enhanced system fault tolerance by devising an innovative hybrid network architecture that securely merged the Twingate zero-trust network with localized edge computing.",
-      ],
+      summary:
+         "Engineered industrial IoT telemetry and analytics tooling for Siemens-driven manufacturing floors.",
       icon: "/assets/d2iTechnology.webp",
       link: "https://d2itechnology.com",
       animation: "victory",
+      projects: [
+         {
+            name: "Industrial IoT Telemetry Platform",
+            description:
+               "Delivered a full-stack telemetry system for Siemens S7-1200 PLCs on Raspberry Pi edge devices.",
+            impact: [
+               "Achieved 99.9% remote monitoring uptime by interfacing via Snap7 for industrial-grade data acquisition.",
+               "Containerized MS SQL Server workloads in Docker, cutting high-concurrency query latency by 35%.",
+            ],
+            technologies: ["Raspberry Pi", "Snap7", "Docker", "MS SQL Server"],
+         },
+         {
+            name: "Operations Insight Dashboard",
+            description:
+               "Unlocked real-time manufacturing analytics and alerts for cross-functional stakeholders.",
+            impact: [
+               "Built an interactive Grafana and Appsmith dashboard that increased user engagement by 50%.",
+               "Devised a hybrid Twingate + edge network architecture that reduced latency by 30% while improving fault tolerance.",
+            ],
+            technologies: ["Grafana", "Appsmith", "Twingate", "Edge Computing"],
+         },
+      ],
    },
 ];

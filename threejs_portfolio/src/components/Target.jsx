@@ -1,28 +1,51 @@
-import { useGLTF } from "@react-three/drei";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Target = (props) => {
-  const targetRef = useRef();
-  const { scene } = useGLTF(
-    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf",
-  );
+   const targetRef = useRef();
 
-  useGSAP(() => {
-    gsap.to(targetRef.current.position, {
-      y: targetRef.current.position.y + 0.5,
-      duration: 1.5,
-      repeat: -1,
-      yoyo: true,
-    });
-  });
+   useGSAP(() => {
+      if (!targetRef.current) return;
+      const initialY = targetRef.current.position.y;
+      gsap.to(targetRef.current.position, {
+         y: initialY + 0.45,
+         duration: 1.6,
+         ease: "sine.inOut",
+         repeat: -1,
+         yoyo: true,
+      });
+   });
 
-  return (
-    <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.7}>
-      <primitive object={scene} />
-    </mesh>
-  );
+   return (
+      <group
+         {...props}
+         ref={targetRef}
+         rotation={[0, Math.PI / 5, 0]}
+         scale={1.65}
+      >
+         <mesh rotation={[Math.PI / 2, 0, 0]}>
+            <torusGeometry args={[0.95, 0.07, 24, 90]} />
+            <meshStandardMaterial color="#ffffff" />
+         </mesh>
+         <mesh rotation={[Math.PI / 2, 0, 0]}>
+            <torusGeometry args={[0.68, 0.07, 24, 90]} />
+            <meshStandardMaterial color="#f97373" />
+         </mesh>
+         <mesh rotation={[Math.PI / 2, 0, 0]}>
+            <torusGeometry args={[0.43, 0.07, 24, 90]} />
+            <meshStandardMaterial color="#ffffff" />
+         </mesh>
+         <mesh rotation={[Math.PI / 2, 0, 0]}>
+            <torusGeometry args={[0.18, 0.07, 24, 90]} />
+            <meshStandardMaterial color="#f97373" />
+         </mesh>
+         <mesh position={[0, -0.65, 0]}>
+            <cylinderGeometry args={[0.05, 0.05, 1.3, 24]} />
+            <meshStandardMaterial color="#1f1f1f" />
+         </mesh>
+      </group>
+   );
 };
 
 export default Target;
